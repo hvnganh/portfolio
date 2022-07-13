@@ -1,0 +1,169 @@
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto Mono', monospace;    
+    box-sizing: border-box;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+    color: var(--text-color);
+}
+
+p {
+    font-size: 1rem;
+}
+
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+    --text-color: #fffffd;
+
+    --height-nav: 60px;
+}
+
+.education-track {
+    padding: 16px 0 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-track p {
+    line-height: 4rem;
+    font-size: 4rem;
+    font-weight: 500;
+    text-shadow: -2px 2px 3px #c3a15e;
+    color: #fff786;
+}
+
+.aboutme-track {
+    padding: 16px 0 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme-track p {
+    line-height: 4rem;
+    font-size: 4rem;
+    font-weight: 500;
+    text-shadow: -2px 2px 3px var(--text-color);
+    color: var(--text-color);
+}
+
+
+.experience-track {
+    padding: 16px 0 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-track p {
+    line-height: 4rem;
+    font-size: 4rem;
+    font-weight: 500;
+    text-shadow: -2px 2px 3px var(--text-color);
+    color: var(--text-color); 
+    text-transform: uppercase;
+}
+
+.skill-track {
+    padding: 16px 0 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-track p {
+    line-height: 4rem;
+    font-size: 4rem;
+    font-weight: 500;
+    text-shadow: -2px 2px 3px #c3a15e;
+    color: #fff786; 
+    text-transform: uppercase;
+}
+
+.contact-track {
+    padding: 16px 0 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-track p {
+    line-height: 4rem;
+    font-size: 4rem;
+    font-weight: 500;
+    text-shadow: -2px 2px 3px var(--white-color);
+    color: var(--white-color); 
+    text-transform: uppercase;
+}
+
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.scroll-to-top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    color: var(--white-color);
+    display: none;
+}
+
+.scroll-to-top.appear {
+    display: flex;
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce { 
+    0% {
+        transform: translateY(0);
+    } 40% {
+        transform: translateY(-15px);
+    }
+}
+
+.scroll-to-top:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,179 @@
+@media (min-width: 64em) {
+    
+}
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+    .no-gutters .col {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .introduction {
+        max-width: fit-content;
+    }
+
+    .introduce-infor {
+        transform: translateY(0);
+        width: 360px;
+        height: 300px;
+    }
+    
+    .introduce-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .introduce-title {
+        padding-top: 10px;
+    }
+
+    .introduce-desc {
+        padding-top: 6px;
+        font-size: 1.4rem;
+    }
+    
+    .education-img {
+        border-radius: 24px;
+    }
+
+    .education-major {
+        margin-bottom: 16px;
+    }
+
+    .experience-item {
+        width: 100%;
+    }
+
+    .experience-img {
+        width: 340px;
+        height: 250px;
+    }
+
+    .experience-infor {
+        transform: translateY(0%);
+        padding: 0 10px 0 10px;
+    }
+
+    .experience-title {
+        padding-top: 10px;
+    }
+
+    .experience-desc {
+        padding-top: 6px;
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (max-width: 46.1875em) {
+    html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+    #header .mobile-menu-btn {
+        display: block;
+        right: 10px;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    #header .menu-icon:hover,.header__navbar-detail:hover {
+        text-shadow: none;
+    }
+
+    .header__navbar {
+        display: initial;
+        text-align: left;
+        background-color: var(--black-color);
+    }
+
+    .header__navbar-items { 
+        display: initial;
+    }
+
+    .header__navbar-detail {
+        display: block;
+        padding: 0 0 0 16px;
+    }
+
+    .introduce-infor {
+        transform: translateY(20px);
+        padding: 0 10px;
+    }
+
+    .introduce-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .introduce-title {
+        padding-top: 5px;
+    }
+
+    .introduce-desc {
+        font-size: 1.4rem;
+    }
+
+    .education-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .education-graduation {
+        font-size: 1.6rem;
+    }
+
+    .education-major {
+        font-size: 1.6rem;
+    }
+
+    .experience-img {
+        width: 240px;
+        height: 200px;
+    }
+
+    .experience-infor {
+        padding: 0 10px;
+        transform: translateY(-2px);
+    }
+
+    .experience-title {
+        padding-top: 5px;
+        font-size: 1.5rem;
+    }
+
+    .experience-desc {
+        font-size: 1.4rem;
+    }
+
+    .contact-text,.contact-icon {
+        font-size: 1.4rem;
+    }
+
+    .experience-name {
+        font-size: 1.6rem;
+    }
+
+    
+    .experience-item-mobile {
+        display: flex;
+    }
+
+    .experience-item-pc {
+        display: none;
+    }
+
+}
