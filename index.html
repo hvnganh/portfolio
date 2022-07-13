@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/img/">
@@ -23,11 +24,11 @@
             <div class="grid">
                 <div class="header__navbar">
                     <ul class="header__navbar-items">
-                        <li><a href="#aboutme" class="header__navbar-detail">About Me</a></li>
-                        <li><a href="#education" class="header__navbar-detail">Education</a></li>
-                        <li><a href="#experience" class="header__navbar-detail">Experience</a></li>
-                        <li><a href="#skill" class="header__navbar-detail">Skills</a></li>
-                        <li><a href="#contact" class="header__navbar-detail">Contact</a></li>
+                        <li><a id="aboutme1" href="#" class="header__navbar-detail">About Me</a></li>
+                        <li><a id="education1" href="#education" class="header__navbar-detail">Education</a></li>
+                        <li><a id="experience1" href="#experience" class="header__navbar-detail">Experience</a></li>
+                        <li><a id="skill1" href="#skill" class="header__navbar-detail">Skills</a></li>
+                        <li><a id="contact1" href="#contact" class="header__navbar-detail">Contact</a></li>
                     </ul>
 
                     <div id="mobile-menu" class="mobile-menu-btn">
@@ -39,7 +40,7 @@
 
         <div class="container">
             <div class="grid">
-                <div id="aboutme" class="aboutme-track">
+                <div class="aboutme-track">
                     <p>ABOUT ME</p>
                 </div>
                 <div class="introduction">
@@ -192,33 +193,33 @@
                         </div>
                     </div>
                 </div>
-
+  
                 <div id="skill" class="skill-track">
                     <p>skill</p>
                 </div>
                 <div class="skill">
                     <div class="row">
-                        <div class="skill-items">
-                            <div class="col no-gutters l-4 m-6 c-12">
-                                <div class="skill-school">
+                        <div class="skill-items slideshow-container">
+                            <div class="pop-up col no-gutters l-4 m-6 c-12">
+                            <div class="skill-school">
                                     <img src="./assets/img/html.jpg" alt="" class="skill-img">
                                 </div>
 
                             </div>
-                            <div class="col no-gutters l-4 m-6 c-12">
-                                <div class="skill-school">
+                            <div class="pop-up col no-gutters l-4 m-6 c-12">
+                            <div class="skill-school">
                                     <img src="./assets/img/css.jpg" alt="" class="skill-img">
                                 </div>
 
                             </div>
-                            <div class="col no-gutters l-4 m-6 c-12">
-                                <div class="skill-school">
+                            <div class="pop-up col no-gutters l-4 m-6 c-12">
+                            <div class="skill-school">
                                     <img src="./assets/img/js.jpg" alt="" class="skill-img">
                                 </div>
 
                             </div>
-                            <div class="col no-gutters l-4 m-6 c-12">
-                                <div class="skill-school">
+                            <div class="pop-up col no-gutters l-4 m-6 c-12">
+                            <div class="skill-school">
                                     <img src="./assets/img/react.jpg" alt="" class="skill-img">
                                 </div>
                                 <div class="education-infor">
@@ -226,8 +227,8 @@
 
                                 </div>
                             </div>
-                            <div class="col no-gutters l-4 m-6 c-12">
-                                <div class="skill-school">
+                            <div class="pop-up col no-gutters l-4 m-6 c-12">
+                            <div class="skill-school">
                                     <img src="./assets/img/python.jpg" alt="" class="skill-img">
                                 </div>
                                 <div class="education-infor">
@@ -235,8 +236,8 @@
 
                                 </div>
                             </div>
-                            <div class="col no-gutters l-4 m-6 c-12">
-                                <div class="skill-school">
+                            <div class="pop-up col no-gutters l-4 m-6 c-12">
+                            <div class="skill-school">
                                     <img src="./assets/img/django.jpg" alt="" class="skill-img">
                                 </div>
                                 <div class="education-infor">
@@ -244,6 +245,8 @@
 
                                 </div>
                             </div>
+                            <!-- <a class="prev" onclick="plusSlides(-1)">❮</a> -->
+                            <!-- <a class="next" onclick="plusSlides(1)">❯</a> -->
                         </div>
                     </div>
                 </div>
@@ -257,10 +260,12 @@
                 <div class="contact-section">
                     <div class="row">
                         <div class="col contact-info">
-                            <p class="contact-text"><i class="contact-icon fa-solid fa-location-dot"></i>130 Le Van Luong,
+                            <p class="contact-text"><i class="locate-icon contact-icon fa-solid fa-location-dot"></i>130
+                                Le Van Luong,
                                 Tan Hung Ward, District 7, HCMC</p>
-                            <p class="contact-text"><i class="contact-icon fa-solid fa-phone"></i>079 477 0468</p>
-                            <p class="contact-text"><i class="contact-icon fa-solid fa-at"></i>nguyenhunganhhcm@gmail.com
+                            <p class="contact-text"><i class="contact-icon fa-solid fa-phone"></i>079.477.0468</p>
+                            <p class="contact-text"><i
+                                    class="contact-icon fa-solid fa-at"></i>nguyenhunganhhcm@gmail.com
                             </p>
                         </div>
                     </div>
@@ -272,19 +277,153 @@
                             class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
-        </footer> 
+        </footer>
+
+        <!-- Modal -->
+
+        <div class="modal">
+            <div class="modal-container">
+                <div class="modal-close">
+                    <i class="icon-close fa-solid fa-xmark"></i>
+                </div>
+                <header class="modal-header">
+                    <i class="icon-visitor fa-solid fa-user"></i> Visitor
+                </header>
+                <div class="modal-body">
+                    <label for="" class="modal-label">
+                        <i class="icon-input fa-solid fa-pen"></i> Full name
+                    </label>
+                    <input type="text" class="modal-input" placeholder="Your full name...">
+
+                    <label for="" class="modal-label">
+                        <i class="icon-input fa-solid fa-pen"></i> Phone number
+                    </label>
+                    <input type="text" class="modal-input" placeholder="Your phone number...">
+
+                    <label for="" class="modal-label">
+                        <i class="icon-input fa-solid fa-pen"></i> Mail
+                    </label>
+                    <input type="text" class="modal-input" placeholder="Your email...">
+
+                    <button class="confirm">
+                        Send <i class="fa-solid fa-check"></i>
+                    </button>
+                </div>
+
+                <footer class="modal-footer">
+                    <p class="modal-help">Need<a class="help-link" href="#"> help?</a></p>
+                </footer>
+            </div>
+        </div>
+        <div class="button-wrap">
+            <button class="open-modal">
+                <i class="fa-solid fa-comment-dots"></i>
+            </button>
+        </div>
+
         <div class="button-wrap">
             <button class="scroll-to-top">
                 <i class="fa-solid fa-arrow-up"></i>
-            </button>  
+            </button>
         </div>
+
+        <div class="maps">
+            <iframe class="maps-inner"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.9543153902873!2d106.70420652924479!3d10.748562817096488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f74309b413b%3A0x5bfe0176cd35837a!2zMTMwIMSQLiBMw6ogVsSDbiBMxrDGoW5nLCBUw6JuIEtp4buDbmcsIFF14bqtbiA3LCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1657716665125!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
     </div>
+
     <script>
+        const aboutMe = document.querySelector('#aboutme1')
+        const edu = document.querySelector('#education1')
+        const exp = document.querySelector('#experience1')
+        const skill = document.querySelector('#skill1')
+        const contact = document.querySelector('#contact1')
+        const changeTitle = () => {
+            document.title = 'Introduce'
+        }
+
+        const changeTitleEdu = () => {
+            document.title = 'Education'
+        }
+
+        const changeTitleExp = () => {
+            document.title = 'Experience'
+        }
+
+        const changeTitleSkill = () => {
+            document.title = 'Skills'
+        }
+
+        const changeTitleContact = () => {
+            document.title = 'Contact'
+        }
+
+        aboutMe.addEventListener('click', changeTitle)
+        edu.addEventListener('click', changeTitleEdu)
+        exp.addEventListener('click', changeTitleExp)
+        skill.addEventListener('click', changeTitleSkill)
+        contact.addEventListener('click', changeTitleContact)
+    </script>
+
+
+
+    <script>
+
+        // Open GG Maps
+        const maps = document.querySelector('.maps')
+        const locateBtn = document.querySelector('.locate-icon')
+        const mapsContainer = document.querySelector('.maps-inner')
+
+        const showMaps = () => {
+            maps.classList.add('open-map')
+        }
+
+        const hideMap = () => {
+            maps.classList.remove('open-map')
+        }
+
+        locateBtn.addEventListener('click', showMaps)
+
+        maps.addEventListener('click', hideMap)
+
+        mapsContainer.addEventListener('click', (event) => {
+            event.stopPropagation()
+        })
+
+        // Open Modal
+        const modal = document.querySelector('.modal')
+        const btnModal = document.querySelector('.open-modal')
+        const closeModal = document.querySelector('.modal-close')
+        const modalContainer = document.querySelector('.modal-container')
+
+        const showModal = () => {
+            modal.classList.add('open')
+        }
+
+        const hideModal = () => {
+            modal.classList.remove('open')
+        }
+
+        btnModal.addEventListener('click', showModal)
+
+        modal.addEventListener('click', hideModal)
+
+        closeModal.addEventListener('click', hideModal)
+
+        modalContainer.addEventListener('click', (event) => {
+            event.stopPropagation()
+        })
+
+        // Scroll To Top
         const btnScrollToTop = document.querySelector('.scroll-to-top')
         const navBar = document.querySelector('.header__navbar')
         // const eduAni = document.querySelector('.js-edu-items')
 
-        window.onscroll = function() {scrollF()};
+        window.onscroll = function () { scrollF() };
         function scrollF() {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 btnScrollToTop.classList.add('appear')
@@ -295,27 +434,20 @@
             }
         }
 
-        /* window.onscroll = () => {scrollFunctionEducation()};
-        function scrollFunctionEducation() {
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                eduAni.classList.add('edu-ani')
-            } else {
-                eduAni.classList.remove('edu-ani')
-            }
-        } */
-
         function scrollToTop() {
-            window.scrollTo(0,0)
+            window.scrollTo(0, 0)
         }
+
         btnScrollToTop.addEventListener('click', scrollToTop)
     </script>
 
     <script>
+        // Menu Mobile
         var header = document.querySelector('.header__navbar');
         var mobileMenu = document.getElementById('mobile-menu');
         var headerHeight = header.clientHeight;
 
-        //
+
         mobileMenu.onclick = function () {
             var isClosed = header.clientHeight === headerHeight;
             if (isClosed) {
@@ -339,6 +471,38 @@
             }
         }
     </script>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
 </body>
 
 </html>

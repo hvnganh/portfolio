@@ -72,6 +72,12 @@
         font-size: 1.4rem;
     }
 
+    .modal-container,
+    .maps-inner {
+        width: 700px;
+        height: 500px;
+    }
+
 }
 
 @media (max-width: 46.1875em) {
@@ -176,4 +182,8 @@
         display: none;
     }
 
+    .maps-inner {
+        width: 400px;
+        height: 400px;
+    }
 }
