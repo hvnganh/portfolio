@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+.app {
+    overflow: hidden;
+}
+
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
